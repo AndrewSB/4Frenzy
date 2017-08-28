@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Novi 4Frenzy Vote Bot",
+  "description": "This extension runs a bot that iteratively votes for Novi",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "alarms"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["http://www.clickondetroit.com/*"],
+      "js": ["script0.js"]
+	}
+  ],
+  
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
